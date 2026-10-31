@@ -169,7 +169,7 @@ Benchmarked using `python scripts/run_eval.py` across 16 golden Q&A pairs spanni
 > - **Reranking Impact**: On semantic chunking, cross-encoder reranking lifts Context Precision from **0.833 to 0.900** (+8.0% relative gain) and Faithfulness from **0.591 to 0.658** (+11.3% relative gain) by prioritizing contextually aligned passages over keyword noise.
 > - **Latency Trade-off**: Un-reranked hybrid retrieval achieves ultra-fast p50 retrieval in **~15–16 ms**, while CPU cross-encoder reranking adds predictable ~260–300 ms precision passes.
 
-## Engineering notes
+## Notes
 
 <details>
 <summary>Why the code looks the way it does</summary>
@@ -182,10 +182,6 @@ Benchmarked using `python scripts/run_eval.py` across 16 golden Q&A pairs spanni
 
 </details>
 
-## Limits
-
-- Local only — no hosted demo, so it uses your Groq free-tier quota.
-- The corpus is synthetic AI/ML text; answers are grounded in whatever you upload.
 
 ## License
 
