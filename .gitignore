@@ -1,0 +1,18 @@
+.env
+.~lock.*
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.next/
+**/data/index/
+.commandcode/
+
+# local corpus: seed with scripts/gen_corpus.py or upload your own files
+backend/data/corpus/
+
+# generated deliverables (rebuild: make_deck.py, build_plain_english_guide.py)
+*.pptx
+Sentinel_RAG.pdf
+Sentinel_RAG_Comprehensive_Guide.html
+Sentinel_RAG_Comprehensive_Guide.pdf
